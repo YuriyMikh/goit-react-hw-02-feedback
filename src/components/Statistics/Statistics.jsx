@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Notification } from 'components/Notification/Notification';
 
-export class Statistic extends Component {
+export class Statistics extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -40,7 +41,7 @@ export class Statistic extends Component {
         <p>Statistics</p>
 
         {this.countTotalFeedback() === 0 ? (
-          <p>There is no feedback</p>
+          <Notification message="There is no feedback" />
         ) : (
           <>
             <ul>

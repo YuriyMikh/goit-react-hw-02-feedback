@@ -1,4 +1,4 @@
-import {Statistic} from './Statistic/Statistic'
+import {Statistics} from './Statistics/Statistics'
 
 export const App = () => {
   return (
@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Statistic/>
+      <Statistics/>
     </div>
   );
 };
