@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
+import { StyledLi, StyledP, StyledUl } from './Statistics.styled';
 
 export const Statistics = ({ grades, total, positivePercentage }) => {
   return (
     <>
-      <ul>
+      <StyledUl>
         {grades.map(([key, value]) => (
-          <li key={key}>
+          <StyledLi key={key}>
             {key}: {value}
-          </li>
+          </StyledLi>
         ))}
-      </ul>
-      <p>Total: {total()}</p>
-      <p>Positive feedback: {positivePercentage()}%</p>
+      </StyledUl>
+      <StyledP>Total: {total()}</StyledP>
+      <StyledP>Positive feedback: {positivePercentage()}%</StyledP>
     </>
   );
 };
